@@ -1,6 +1,7 @@
 // Q1
 
 #include <iostream>
+#include <cmath>
 using namespace std;
 int main()
 {
@@ -556,31 +557,846 @@ int main()
     // Q29
     cout << "Question29" << endl;
     cout << endl;
+    int number1 = 1;
     for (i = 1; i <= 4; i++)
     {
-        for ( int k = 4; k > i; k--)
+        for (int k = 4; k > i; k--)
         {
             cout << " ";
         }
         for (j = 1; j <= i; j++)
         {
-            cout << n << " ";
-            n++;
+            cout << number1 << " ";
+            number1++;
         }
         cout << endl;
     }
     for (i = 3; i >= 1; i--)
     {
-        n = i * (i - 1) / 2 + 1;
-        for ( int k = 1; k <= 4 - i; k++)
+        number1 = i * (i - 1) / 2 + 1;
+        for (int k = 1; k <= 4 - i; k++)
         {
             cout << " ";
         }
 
         for (j = 1; j <= i; j++)
         {
-            cout << n << " ";
-            n++;
+            cout << number1 << " ";
+            number1++;
+        }
+        cout << endl;
+    }
+
+    cout << "-----------------------------------------" << endl;
+    cout << endl;
+    // Q30
+    cout << "Question30" << endl;
+    cout << endl;
+
+    for (i = 1; i < 5; i++)
+    {
+        for (int k = 1; k < 5 - i; k++)
+        {
+            cout << " ";
+        }
+        for (j = 1; j <= 2 * i - 1; j++)
+        {
+            if (j == 1 || j == 2 * i - 1)
+            {
+                cout << i;
+            }
+            else
+            {
+                cout << " ";
+            }
+        }
+
+        cout << endl;
+    }
+    for (i = 3; i >= 1; i--)
+    {
+        for (int k = 1; k < 5 - i; k++)
+        {
+            cout << " ";
+        }
+        for (j = 1; j <= 2 * i - 1; j++)
+        {
+            if (j == 1 || j == 2 * i - 1)
+            {
+                cout << i;
+            }
+            else
+            {
+                cout << " ";
+            }
+        }
+        cout << endl;
+    }
+
+    cout << "-----------------------------------------" << endl;
+    cout << endl;
+    // Q31
+    cout << "Question31" << endl;
+    cout << endl;
+    for (i = 1; i <= 5; i++)
+    {
+        for (int k = 5; k >= i; k--)
+        {
+            cout << " ";
+        }
+        for (j = 1; j <= i; j++)
+        {
+            cout << "* " << "";
+        }
+        cout << endl;
+    }
+
+    cout << "-----------------------------------------" << endl;
+    cout << endl;
+    // Q32
+    cout << "Question32" << endl;
+    cout << endl;
+    for (i = 1; i <= 5; i++)
+    {
+        for (int k = 5; k >= i; k--)
+        {
+            cout << " ";
+        }
+        for (j = 1; j <= i; j++)
+        {
+            cout << "*" << "";
+        }
+        cout << endl;
+    }
+
+    cout << "-----------------------------------------" << endl;
+    cout << endl;
+    // Q33
+    cout << "Question33" << endl;
+    cout << endl;
+
+    for (i = 1; i <= 5; i++)
+    {
+        for (int k = 5; k >= i; k--)
+        {
+            cout << " ";
+        }
+        for (j = 1; j <= 2 * i - 1; j++)
+        {
+            if (j == 1 || j == 2 * i - 1 || i == 5)
+            {
+                cout << "*";
+            }
+            else
+            {
+                cout << " ";
+            }
+        }
+
+        cout << endl;
+    }
+
+    cout << "-----------------------------------------" << endl;
+    cout << endl;
+    // Q34
+    cout << "Question34" << endl;
+    cout << endl;
+
+    for (int i = 1; i <= 3; i++)
+    {
+
+        for (int k = 3 - i; k > 0; k--)
+        {
+            cout << " ";
+        }
+        int stars;
+        string gap;
+        if (i == 1)
+        {
+            stars = 3;
+            gap = "   ";
+        }
+        else if (i == 2)
+        {
+            stars = 6;
+            gap = " ";
+        }
+        else
+        {
+            stars = 4;
+            gap = "   ";
+        }
+
+        for (int j = 1; j <= stars; j++)
+        {
+            cout << "*";
+            if (j < stars)
+            {
+                cout << gap;
+            }
+        }
+
+        cout << endl;
+    }
+
+    cout << "-----------------------------------------" << endl;
+    cout << endl;
+    // Q35
+    cout << "Question35" << endl;
+    cout << endl;
+
+    for (i = 1; i <= 5; i++)
+    {
+        for (int k = 1; k <= 5 - i; k++)
+        {
+            cout << " ";
+        }
+        for (j = 1; j <= 2 * i - 1; j++)
+        {
+            if (j == 1 || j == 2 * i - 1)
+            {
+                cout << "*";
+            }
+            else
+            {
+                cout << " ";
+            }
+        }
+
+        cout << endl;
+    }
+    for (i = 4; i >= 1; i--)
+    {
+        for (int k = 1; k <= 5 - i; k++)
+        {
+            cout << " ";
+        }
+        for (j = 1; j <= 2 * i - 1; j++)
+        {
+            if (j == 1 || j == 2 * i - 1)
+            {
+                cout << "*";
+            }
+            else
+            {
+                cout << " ";
+            }
+        }
+        cout << endl;
+    }
+
+    cout << "-----------------------------------------" << endl;
+    cout << endl;
+    // Q36
+    cout << "Question36" << endl;
+    cout << endl;
+
+    for (i = 1; i <= 5; i++)
+    {
+        for (int k = 5; k >= i; k--)
+        {
+            cout << "";
+        }
+        for (j = 1; j <= 2 * i - 1; j++)
+        {
+            if (j == 1 || j == 2 * i - 1 || i == 5)
+            {
+                cout << "*";
+            }
+            else
+            {
+                cout << " ";
+            }
+        }
+
+        cout << endl;
+    }
+    cout << "-----------------------------------------" << endl;
+    cout << endl;
+    // Q37
+    cout << "Question37" << endl;
+    cout << endl;
+
+    for (i = 3; i >= 1; i--)
+    {
+        for (int k = 1; k < 4 - i; k++)
+        {
+            cout << " ";
+        }
+        for (j = 1; j <= 2 * i - 1; j++)
+        {
+            if (j == 1 || j == 2 * i - 1)
+            {
+                cout << "*";
+            }
+            else
+            {
+                cout << " ";
+            }
+        }
+        cout << endl;
+    }
+    for (i = 2; i < 4; i++)
+    {
+        for (int k = 1; k < 4 - i; k++)
+        {
+            cout << " ";
+        }
+        for (j = 1; j <= 2 * i - 1; j++)
+        {
+            if (j == 1 || j == 2 * i - 1)
+            {
+                cout << "*";
+            }
+            else
+            {
+                cout << " ";
+            }
+        }
+
+        cout << endl;
+    }
+
+    cout << "-----------------------------------------" << endl;
+    cout << endl;
+    // Q38
+    cout << "Question38" << endl;
+    cout << endl;
+
+    for (i = 1; i <= 4; i++)
+    {
+        for (int k = 4; k > i; k--)
+        {
+            cout << " ";
+        }
+        for (j = 1; j <= i; j++)
+        {
+            cout << "*" << " ";
+        }
+        cout << endl;
+    }
+    for (i = 3; i >= 1; i--)
+    {
+
+        for (int k = 1; k <= 4 - i; k++)
+        {
+            cout << " ";
+        }
+
+        for (j = 1; j <= i; j++)
+        {
+            cout << "*" << " ";
+        }
+        cout << endl;
+    }
+
+    cout << "-----------------------------------------" << endl;
+    cout << endl;
+    // Q39
+    cout << "Question39" << endl;
+    cout << endl;
+
+    for (i = 1; i <= 5; i++)
+    {
+        for (j = 1; j <= 5; j++)
+        {
+            if (i == 1 || j == 1 || i == 5)
+            {
+                cout << "*";
+            }
+            else if (j == 5)
+            {
+                cout << "   * ";
+            }
+        }
+
+        cout << endl;
+    }
+
+    cout << "-----------------------------------------" << endl;
+    cout << endl;
+    // Q40
+    cout << "Question40" << endl;
+    cout << endl;
+
+    char l, m;
+
+    for (l = 'A'; l <= 'E'; l++)
+    {
+        for (m = 'A'; m <= l; m++)
+        {
+            cout << m << " ";
+        }
+        cout << endl;
+    }
+
+    cout << "-----------------------------------------" << endl;
+    cout << endl;
+    // Q41
+    cout << "Question41" << endl;
+    cout << endl;
+
+    for (l = 'E'; l >= 'A'; l--)
+    {
+        for (m = l; m >= 'A'; m--)
+        {
+            cout << m << " ";
+        }
+        cout << endl;
+    }
+
+    cout << "-----------------------------------------" << endl;
+    cout << endl;
+    // Q42
+    cout << "Question42" << endl;
+    cout << endl;
+    char temmp = 'A';
+    for (l = 'A'; l <= 'E'; l++)
+    {
+        for (m = 'A'; m <= l; m++)
+        {
+            cout << temmp << " ";
+            temmp++;
+        }
+        cout << endl;
+    }
+
+    cout << "-----------------------------------------" << endl;
+    cout << endl;
+    // Q43
+    cout << "Question43" << endl;
+    cout << endl;
+
+    for (l = 'A'; l <= 'D'; l++)
+    {
+        // for (char p = 'D'; p > l; p--)
+        // {
+        //     cout << " ";
+        // }
+        for (m = 'A'; m <= l; m++)
+        {
+            cout << m << " ";
+        }
+        cout << endl;
+    }
+    for (l = 'C'; l >= 'A'; l--)
+    {
+        // number2 = l * (l - 'A') / 'B' + 'A';
+        for (char p = 'A'; p <= 'D' - l; p++)
+        {
+            cout << " ";
+        }
+
+        for (m = 'A'; m <= l; m++)
+        {
+            cout << m << " ";
+        }
+        cout << endl;
+    }
+
+    cout << "-----------------------------------------" << endl;
+    cout << endl;
+    // Q44
+    cout << "Question44" << endl;
+    cout << endl;
+
+    for (l = 'A'; l <= 'D'; l++)
+    {
+        for (char p = 'D'; p >= l; p--)
+        {
+            cout << " ";
+        }
+        for (m = 'A'; m <= l; m++)
+        {
+            cout << m << " ";
+        }
+        cout << endl;
+    }
+    for (l = 'C'; l >= 'A'; l--)
+    {
+        for (char p = 'D'; p >= l; p--)
+        {
+            cout << " ";
+        }
+        for (m = 'A'; m <= l; m++)
+        {
+            cout << m << " ";
+        }
+        cout << endl;
+    }
+
+    cout << "-----------------------------------------" << endl;
+    cout << endl;
+    // Q45
+    cout << "Question45" << endl;
+    cout << endl;
+
+    for (l = 'A'; l <= 'D'; l++)
+    {
+        for (char p = 'D'; p > l; p--)
+        {
+            cout << "  ";
+        }
+        for (m = 'A'; m <= l; m++)
+        {
+
+            cout << m << " ";
+        }
+        for (char o = l - 1; o >= 'A'; o--)
+        {
+            cout << o << " ";
+        }
+
+        cout << endl;
+    }
+
+    cout << "-----------------------------------------" << endl;
+    cout << endl;
+    // Q46
+    cout << "Question46" << endl;
+    cout << endl;
+
+    for (l = 'A'; l <= 'E'; l++)
+    {
+        for (m = 'A'; m <= l; m++)
+        {
+            cout << "A" << " ";
+        }
+        cout << endl;
+    }
+
+    cout << "-----------------------------------------" << endl;
+    cout << endl;
+    // Q47
+    cout << "Question47" << endl;
+    cout << endl;
+
+    for (l = 'E'; l >= 'A'; l--)
+    {
+        for (m = 'E'; m >= l; m--)
+        {
+            cout << l << " ";
+        }
+        cout << endl;
+    }
+
+    cout << "-----------------------------------------" << endl;
+    cout << endl;
+    // Q48
+    cout << "Question48" << endl;
+    cout << endl;
+
+    for (l = 'E'; l >= 'A'; l--)
+    {
+        for (m = 'E'; m >= l; m--)
+        {
+            cout << "*" << " ";
+        }
+        cout << endl;
+    }
+
+    cout << "-----------------------------------------" << endl;
+    cout << endl;
+    // Q49
+    cout << "Question49" << endl;
+    cout << endl;
+    for (i = 0; i < 5; i++)
+    {
+        for (int k = 0; k < i; k++)
+        {
+            cout << "  ";
+        }
+        int stars = 9 - (i * 2);
+        for (j = 0; j < stars; j++)
+        {
+            cout << "* ";
+        }
+        cout << endl;
+    }
+
+    cout << "-----------------------------------------" << endl;
+    cout << endl;
+    // Q50
+    cout << "Question50" << endl;
+    cout << endl;
+
+    for (l = 'A'; l <= 'E'; l++)
+    {
+        // for (char p = 'D'; p > l; p--)
+        // {
+        //     cout << " ";
+        // }
+        for (m = 'A'; m <= l; m++)
+        {
+            cout << "*" << " ";
+        }
+        cout << endl;
+    }
+    for (l = 'D'; l >= 'A'; l--)
+    {
+        // number2 = l * (l - 'A') / 'B' + 'A';
+        for (char p = 'A'; p <= 'E' - l; p++)
+        {
+            cout << " ";
+        }
+
+        for (m = 'A'; m <= l; m++)
+        {
+            cout << "*" << " ";
+        }
+        cout << endl;
+    }
+
+    cout << "-----------------------------------------" << endl;
+    cout << endl;
+    // Q51
+    cout << "Question51" << endl;
+    cout << endl;
+
+    for (i = 1; i <= 4; i++)
+    {
+        for (j = 1; j <= i; j++)
+            cout << "*";
+
+        for (j = 1; j <= (2 * (4 - i)); j++)
+            cout << " ";
+
+        for (j = 1; j <= i; j++)
+            cout << "*";
+
+        cout << endl;
+    }
+    for (i = 3; i >= 1; i--)
+    {
+
+        for (j = 1; j <= i; j++)
+            cout << "*";
+
+        for (j = 1; j <= 2 * (3 - i) + 2; j++)
+            cout << " ";
+
+        for (j = 1; j <= i; j++)
+            cout << "*";
+
+        cout << endl;
+    }
+
+    cout << "-----------------------------------------" << endl;
+    cout << endl;
+    // Q52
+    cout << "Question52" << endl;
+    cout << endl;
+    for (i = 1; i <= 5; i++)
+    {
+
+        for (j = 1; j <= 5; j++)
+        {
+            if (i == 3 || j == 3)
+            {
+
+                cout << "* ";
+            }
+            else
+            {
+                cout << "  ";
+            }
+        }
+        cout << endl;
+    }
+
+    cout << "-----------------------------------------" << endl;
+    cout << endl;
+    // Q53
+    cout << "Question53" << endl;
+    cout << endl;
+
+    int even;
+
+    for (i = 1; i <= 5; i++)
+    {
+        int even = 2;
+        for (j = 1; j <= i; j++)
+        {
+            cout << even << " ";
+            even += 2;
+        }
+        cout << endl;
+    }
+
+    // cout << "-----------------------------------------" << endl;
+    // cout << endl;
+    // // Q54
+    // cout << "Question54" << endl;
+    // cout << endl;
+
+    // for (int i = 1; i <= 3; i++) {
+    //     for (int k = 2; k >= i; k--){
+    //         cout << " ";
+
+    //     }
+
+    //     for (int j = 1; j <= 2 * i; j++){
+
+    //         cout << "*";
+    //     }
+    //     cout << "";
+
+    //     for (int j = 1; j <= 2 * i; j++){
+
+    //         cout << "*";
+    //     }
+
+    //     cout << endl;
+    // }
+
+    // for (int i = 4; i >= 1; i--) {
+    //     for (int k = 1; k >= i; k--)
+    //         cout << " ";
+
+    //     for (int j = 1; j <= (2 * i - 1); j++)
+    //         cout << "*";
+
+    //     cout << endl;
+    // }
+
+    cout << "-----------------------------------------" << endl;
+    cout << endl;
+    // Q55
+    cout << "Question55" << endl;
+    cout << endl;
+
+    for (i = 1; i <= 4; i++)
+    {
+        for (j = 1; j <= 4; j++)
+        {
+            if (i == j)
+            {
+                cout << i << " ";
+            }
+            else
+            {
+                cout << "0 ";
+            }
+        }
+        cout << endl;
+    }
+
+    cout << "-----------------------------------------" << endl;
+    cout << endl;
+    // Q56
+    cout << "Question56" << endl;
+    cout << endl;
+    int nu = 0;
+
+    for (i = 1; i <= 4; i++)
+    {
+        int count;
+        count = 0;
+
+        while (count < i)
+        {
+            if (nu == 0 || nu % 2 != 0)
+            {
+                cout << nu << " ";
+                count++;
+            }
+            nu++;
+        }
+        cout << endl;
+    }
+
+    cout << "-----------------------------------------" << endl;
+    cout << endl;
+    // Q57
+    cout << "Question57" << endl;
+    cout << endl;
+
+    for (i = 1; i <= 5; i++)
+    {
+        for (j = 1; j <= i; j++)
+        {
+            if (i == 1 || i == 3 || i == 5)
+            {
+                cout << "@ " << " ";
+            }
+            else
+            {
+                cout << "# " << " ";
+            }
+        }
+        cout << endl;
+    }
+
+    cout << "-----------------------------------------" << endl;
+    cout << endl;
+    // Q58
+    cout << "Question58" << endl;
+    cout << endl;
+
+    for (i = 1; i <= 5; i++)
+    {
+        for (j = 1; j <= i; j++)
+        {
+            if (j == 1 || j == 3 || j == 5)
+            {
+                cout << "+ " << " ";
+            }
+            else
+            {
+                cout << "- " << " ";
+            }
+        }
+        cout << endl;
+    }
+
+    cout << "-----------------------------------------" << endl;
+    cout << endl;
+    // Q59
+    cout << "Question59" << endl;
+    cout << endl;
+
+
+    for (i = 0; i < 4; i++)
+    {
+        int value = pow (11, 3 - i);
+        for (j = 0; j < 4 - i; j++)
+        {
+            cout << value << " ";
+        }
+        cout << endl;
+    }
+
+
+     cout << "-----------------------------------------" << endl;
+    cout << endl;
+    // Q60
+    cout << "Question60" << endl;
+    cout << endl;
+
+    for (i = 1; i <= 5; i++)
+    {
+        for (j = 1; j <= i; j++)
+        {
+            if (i == 1)
+            {
+                cout << "RW1" << " ";
+            }
+            else if(i==2)
+            {
+                cout << "RW2" << " ";
+            }
+            else if(i==3)
+            {
+                cout << "RW3" << " ";
+            }
+            else if(i==4)
+            {
+                cout << "RW4" << " ";
+            }
+            else if(i==5)
+            {
+                cout << "RW5" << " ";
+            }
         }
         cout << endl;
     }
